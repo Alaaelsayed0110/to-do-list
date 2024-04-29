@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(4, 39, 39);
+}
+.container{
+    width: 600px;
+    margin: 20px auto;
+}
+.form{
+    background-color: rgba(128, 128, 128, 0.253);
+    padding: 20px;
+    border-radius: 5px;
+}
+.container input[type="text"]{
+    width: 75%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
+.container input[type="submit"]{
+    background-color: red;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.tasks{
+    background-color: rgba(128, 128, 128, 0.253);
+    width: 100%;
+    /* height: 40px; */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.tasks .task{
+    background-color: white;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+}
+.tasks .task:not(:last-child){
+    margin-bottom: 15px;
+}
+.tasks .task:hover{
+    background-color: #f7f7f7;
+}
+.tasks .task.done{
+    opacity: 0.5;
+}
+.tasks .task span{
+    font-weight: bold;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
